@@ -1,0 +1,16 @@
+use react;
+create table BOARD(
+BOARD_ID int not null auto_increment primary key,
+BOARD_TITLE varchar(100),
+BOARD_CONTENT varchar(500),
+REGISTER_ID varchar(20),
+REGISTER_DATE DATETIME default now(),
+UPDATER_ID varchar(20),
+UPDATER_DATE DATETIME default now()
+);
+
+select * from BOARD;
+
+insert into BOARD(BOARD_TITLE,BOARD_CONTENT,REGISTER_ID) values ('제목1','내용1','황영일');
+insert into BOARD(BOARD_TITLE,BOARD_CONTENT,REGISTER_ID) values ('제목2','내용2','황영일');
+select * from BOARD;
