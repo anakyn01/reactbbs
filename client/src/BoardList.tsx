@@ -9,6 +9,8 @@ import Axios from "axios";
 import {Component} from 'react';
 import {Button, Table, Form, Container, Row, Col} from 'react-bootstrap';
 
+
+
 const Board =({//보드라는 컴포넌트 인데 id, title, registerId, registerdate라는 4개의 pops를 받아 
     //이를 html의 테이블에 <tr>요소로 출력합니다
 //Props는 React컴포넌트에 전달되는 인수입니다 
@@ -73,9 +75,7 @@ componentDidMount() {//라이프 사이클 매서드중 하나 컴포넌트가 �
 //boardList구성요소의 상태에서 추출하여 로컬변수에 할당 any는 모든 데이터 유형이 될수 있음을 의미
         return(/*프론트 코드를 적는곳 */
         <>
-<Container>
-<Row>
-<Col>
+
 <h1 className='my-5'>BBS</h1>
 <Table striped bordered hover>
     <colgroup>
@@ -128,10 +128,7 @@ key={v.BOARD_ID}//key는 각 항목을 고유하게 식별하기 위한 속성
         <Button variant='secondary'>수정하기</Button>
         <Button variant='danger'>삭제하기</Button>
     </div>
-</div>
-</Col>
-</Row>
-</Container>      
+</div> 
         </>
         )
     }
